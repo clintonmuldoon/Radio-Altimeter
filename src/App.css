@@ -1,0 +1,38 @@
+.parent {
+    position: relative;
+}
+.scale {
+    position: absolute;
+    z-index: 1;
+}
+.cover {
+    position: absolute;
+    z-index: 6;
+}
+.redlight {
+    background: #f00;
+    width: 35px;
+    height: 35px;
+    margin-top: 180px;
+    margin-left: 60px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+}
+
+.bugImg {
+    position: absolute;
+    z-index: 3;
+}
+.flagImg {
+    position: absolute;
+    z-index: 4;
+}
+.needle {
+    position: absolute;
+    z-index: 5;
+}
+/* footer is slightly lower than image so that user can use Altitude/Bug sliders without the image overlapping and interrupting use */
+.footer {
+    margin-top: 580px;
+}
