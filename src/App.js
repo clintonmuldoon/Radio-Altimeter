@@ -43,7 +43,8 @@ function App() {
         {Altitude <= 500 && <img className='needle' src={needle} style={{ transform: 'rotate(' + needlevalue + 'deg)' }}></img>}
         {Altitude > 500 && <img className='needle' src={needle} style={{ transform: 'rotate(' + needlevalue + 'deg)' }}></img>}
         <img className='cover' src={cover}></img>
-        {check == true && needlevalue > trianglevalue && <div className='redlight'></div>}
+        {check == true && needlevalue < trianglevalue && <div className='redlight' style={{ zIndex: 8 }}></div>}
+        <div className='redlight' style={{ filter: 'brightness(50%)', zIndex: 7 }}></div>
         {Bug <= 500 && <img className='bugImg' src={bugImg} style={{ transform: 'rotate(' + trianglevalue + 'deg)' }}></img>}
         {Bug > 500 && <img className='bugImg' src={bugImg} style={{ transform: 'rotate(' + trianglevalue + 'deg)' }}></img>}
       </div>
